@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wi-Fi Configuration</title>
+</head>
+<body>
+  <h1>Configure Wi-Fi Settings</h1>
+  <form action="/update-wifi" method="POST">
+    <label for="ssid">SSID:</label><br>
+    <input type="text" id="ssid" name="ssid" required><br><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="static_ip">Static IP:</label><br>
+    <input type="text" id="static_ip" name="static_ip" required><br><br>
+    
+    <label for="gateway">Gateway IP:</label><br>
+    <input type="text" id="gateway" name="gateway" required><br><br>
+    
+    <input type="submit" value="Save">
+  </form>
+</body>
+</html>
